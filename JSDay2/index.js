@@ -45,7 +45,7 @@ cars.map(d => console.log(d));
 
 */
 
-
+//Destructuring objects.
 
 //user model
 const user ={
@@ -62,9 +62,29 @@ const user ={
 const{ password, phone, ...rest } = user;
 console.log({rest});
 
+// const{a, ...others} = {a:1, b:2, c:3};
+// console.log(others); //{b:2, c:3}
+
+// const[first, ...others2] = [1,2,3];
+// console.log(others2);
 
 
+const arra = ["saab" , "volvo" , "bmw"];
+const[first, ...other] = arra;
+console.log(other);
 
+
+/* JS good practices
+
+1. Avoid Global Variables
+2. Always declare Local Variables
+3. Declarations on top
+4. Initialize Variables
+5. Declare objects with const
+6. Declare arrays wth const
+7. Use === Conparision
+8. Use Parameter Defaults while using functions
+*/
 
 
 
