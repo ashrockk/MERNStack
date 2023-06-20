@@ -9,5 +9,5 @@ const person ={
 };
 
 const c = person.firstName;
-const a = person.lastName;
+const a = person.fullName();
 console.log(c,a);
