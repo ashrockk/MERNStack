@@ -86,7 +86,12 @@ console.log(other);
 8. Use Parameter Defaults while using functions
 */
 
-
+const myName = (salutation, name) => {
+    if (salutation === ""){
+    salutation = salutation || "Mr";}
+    console.log(`${salutation} ${name}`);
+};
+myName("", "John");
 
 
 
